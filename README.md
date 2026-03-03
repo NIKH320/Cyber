@@ -1,3 +1,6 @@
+
+###BYOD - Zero Trust Secure Workspace
+
 - Designed a Zero Trust-based BYOD security platform that gives employees an encrypted, 
 isolated workspace while keeping their personal device privacy intact. 
 - Implemented device compliance checking, secure virtual drive allocation, role-based access 
