@@ -11,9 +11,9 @@ Detection
     - Device complianace & Anti- Virus checking
 
 - Frontend
-      - Login page with device compliance verification
-      - Admin dashboard for alerts
-      - Employee page for working & receiving tasks
+  - Login page with device compliance verification
+  - Admin dashboard for alerts
+  - Employee page for working & receiving tasks
 
     
         
