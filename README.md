@@ -10,7 +10,7 @@ Detection
     - ML model to define a trust score for employees
     - Device complianace & Anti- Virus checking
 
-  - Frontend
+- Frontend
       - Login page with device compliance verification
       - Admin dashboard for alerts
       - Employee page for working & receiving tasks
