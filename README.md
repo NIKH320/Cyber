@@ -36,25 +36,13 @@ This project solves the problem by implementing a **Zero Trust architecture wher
 ## System Architecture
 
 - User Device
-│
  - Device Compliance Check
-│
-▼
 - Secure Workspace Environment
-│
 - Encrypted Virtual Drive (AES-GCM)
-│
 - Role-Based Access Control
-│
 - Activity Monitoring Engine
-│
-▼
 - UEBA ML Model(Anomaly Detection)
-│
-▼
 - Alert Generation
-│
-▼
 - Admin Dashboard
 
 
