@@ -35,42 +35,34 @@ This project solves the problem by implementing a **Zero Trust architecture wher
 
 ## System Architecture
 
-User Device
+- User Device
 │
-│ Device Compliance Check
-▼
-Secure Workspace Environment
-│
-├── Encrypted Virtual Drive (AES-GCM)
-│
-├── Role-Based Access Control
-│
-└── Activity Monitoring Engine
+ - Device Compliance Check
 │
 ▼
-UEBA ML Model
-(Anomaly Detection)
+- Secure Workspace Environment
+│
+- Encrypted Virtual Drive (AES-GCM)
+│
+- Role-Based Access Control
+│
+- Activity Monitoring Engine
 │
 ▼
-Alert Generation
+- UEBA ML Model(Anomaly Detection)
 │
 ▼
-Admin Dashboard
+- Alert Generation
+│
+▼
+- Admin Dashboard
 
 
 ## Tech Stack
 
-Backend
+Backend : Python,Scikit-Learn. Node.js ,Express.js
 
-- Python
-- Scikit-Learn
-- Node.js
-- Express.js
-
-Frontend
-
-- React.js
-- JavaScript
+Frontend : React.js, JavaScript
 
 Security
 
