@@ -1,5 +1,5 @@
 
-
+//Main app
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import DashboardLayout from "./components/DashboardLayout";
 import DashboardActivity from "./pages/DashboardActivity";
