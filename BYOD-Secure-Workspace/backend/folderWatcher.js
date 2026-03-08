@@ -14,11 +14,11 @@ function initFolderWatcher(wipeCallback) {
   watcher.on('readable', (pathRead) => {
     const now = Date.now();
     if (copyAttemptTime && now - copyAttemptTime < 20000) {
-      console.warn('⚠️ Second suspicious read detected within 20s — triggering wipe...');
+      console.warn(' Second suspicious read detected within 20s — triggering wipe...');
       wipeCallback();
     } else {
       copyAttemptTime = now;
-      console.warn('⚠️ Warning: File read access detected — first attempt.');
+      console.warn(' Warning: File read access detected — first attempt.');
     }
   });
 
