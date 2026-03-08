@@ -51,13 +51,13 @@ const EmployeePage = () => {
     const handlePrint = (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "p") {
         e.preventDefault();
-        alert("🛑 Printing is disabled in secure workspace.");
+        alert(" Printing is disabled in secure workspace.");
       }
     };
 
     const detectScreenshot = (e) => {
       if (e.key === "PrintScreen") {
-        alert("📸 Screenshot attempt detected and blocked!");
+        alert(" Screenshot attempt detected and blocked!");
       }
     };
 
@@ -144,7 +144,8 @@ const EmployeePage = () => {
     }
   }, [wipeTriggered]);
 
-  // Fetch files on load
+
+  
   // useEffect(() => {
     const fetchFiles = async () => {
       try {
@@ -184,13 +185,13 @@ const EmployeePage = () => {
     }
   };
 
-    // ✅ Added download logic with scanning detection from previous code
+    
   const handleDownload = async () => {
     if (!selectedFile) return;
 
     setScanning(true);
 
-    // 🛠 Force a tiny delay to allow UI to update and show popup
+    
   await new Promise((resolve) => setTimeout(resolve, 50));
 
     const start = Date.now();
@@ -279,13 +280,13 @@ const EmployeePage = () => {
       const res = await axios.post('http://localhost:5000/api/upload', formData);
 
       if (res.data.success) {
-        setUploadStatus(`✅ File uploaded: ${res.data.filename}`);
+        setUploadStatus(` File uploaded: ${res.data.filename}`);
         await fetchFiles();
         setUploadFile(null);
         setShowUploadSection(false);
         if (fileInputRef.current) fileInputRef.current.value = '';
       } else {
-        setUploadStatus('❌ Upload failed.');
+        setUploadStatus(' Upload failed.');
       }
     } catch (err) {
       console.error(err);
@@ -496,7 +497,7 @@ const EmployeePage = () => {
             )}
             {wipeTriggered && (
               <div className="wipe-banner">
-                🔥 Workspace wiped due to suspicious activity.
+                Workspace wiped due to suspicious activity.
               </div>
             )}
 
