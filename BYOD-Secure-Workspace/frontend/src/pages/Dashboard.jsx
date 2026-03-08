@@ -6,7 +6,7 @@ import Upload from './Upload';
 import UploadedFiles from './UploadedFiles';
 
 
-//Nikhil
+
 import axios from 'axios';
 
 const DashboardHome = ({ logs, lastUpdated, uploadedFiles, showUploads, handleFilesClick,alerts, mlAlerts }) => (
@@ -172,7 +172,7 @@ const DashboardHome = ({ logs, lastUpdated, uploadedFiles, showUploads, handleFi
       )}
     </div>
 
-    {/* 🔥 Added Wipe Request Button */}
+    
     <button
       onClick={async () => {
         await fetch('http://localhost:5000/api/admin/wipe-request', { method: 'POST' })
@@ -182,7 +182,7 @@ const DashboardHome = ({ logs, lastUpdated, uploadedFiles, showUploads, handleFi
       className="bg-red-600 text-white px-4 py-2 rounded"
       style={{ marginTop: '1rem' }}
     >
-      🔥 Initiate Wipe
+       Initiate Wipe
     </button>
   </>
 );
