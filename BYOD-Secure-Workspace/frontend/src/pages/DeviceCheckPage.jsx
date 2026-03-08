@@ -46,7 +46,7 @@ const DeviceCheckPage = () => {
             <button onClick={handleContinue}>Continue</button>
           </>
         ) : (
-          <p>❌ {error}</p>
+          <p> {error}</p>
         )}
       </div>
     </div>
